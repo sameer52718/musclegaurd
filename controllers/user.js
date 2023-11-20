@@ -3,7 +3,7 @@ import { ErrorHandler } from "../utils/ErrorHandler.js";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import otpGenerator from "otp-generator";
-
+import {sendMail,EmailEnums, EmailTempletes} from "../utils/sendMail.js"
 // ---------------------------------------------------------------PUBLIC FUNCTIIONS ----------------------------------------------------
 
 export const userRegister = async (req, res, next) => {
